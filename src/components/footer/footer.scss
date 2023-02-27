@@ -1,0 +1,52 @@
+.footer-content-wrapper {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.footer-contacts {
+  padding: 38px 0;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media__link {
+  width: 41px;
+  height: 41px;
+  border: 2px solid $basic-accent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    justify-self: center;
+  }
+}
+
+.address {
+  @include text(400, 14px);
+  margin-left: 100px;
+}
+
+.bottom-line {
+  background-color: $basic-gray;
+}
+
+.bottom-line__text {
+  @include text(400, 12px);
+  color: $special-gray;
+  margin: 0;
+}
+
+.bottom-line__privacy-policy {
+  @include link;
+  @include text(400, 12px);
+  color: $special-gray;
+}
