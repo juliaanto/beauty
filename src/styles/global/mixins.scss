@@ -1,0 +1,18 @@
+@mixin text($weight, $size) {
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+@mixin link {
+  text-decoration: none;
+  cursor: pointer;
+  color: $black;
+}

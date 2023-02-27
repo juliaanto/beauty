@@ -1,0 +1,11 @@
+.button-basic {
+  @include text(400, 14px);
+  border: 2px solid $basic-accent;
+  background-color: transparent;
+  border-radius: 40px;
+  padding: 12px 27px;
+}
+
+.button-basic_header {
+  margin-left: 38px;
+}
