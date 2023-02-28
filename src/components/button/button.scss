@@ -1,9 +1,10 @@
 .button-basic {
   @include text(400, 14px);
+  font-family: $font-basic;
   border: 2px solid $basic-accent;
   background-color: transparent;
   border-radius: 40px;
-  padding: 12px 27px;
+  padding: 10px 25px;
 
   &_special {
     @include link;
@@ -13,6 +14,15 @@
     color: $white;
     padding: 11px 45px;
     letter-spacing: 0.05em;
+  }
+
+  &_main {
+    background-color: $basic-accent;
+    color: $white;
+    letter-spacing: 0.05em;
+    border-radius: 30px;
+    padding: 9px 40px;
+    border: none;
   }
 }
 

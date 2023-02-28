@@ -1,0 +1,38 @@
+.goods {
+  background-color: $basic-gray;
+}
+
+.goods__wrapper {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.goods__heading {
+  margin: 0 0 35px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-card {
+  background-color: $white;
+  max-width: 195px;
+  text-align: center;
+  padding: 25px 30px;
+}
+
+.product-card__text {
+  font-size: 14px;
+  line-height: 120%;
+  margin: 20px 0 16px;
+}
+
+.product-card__price {
+  @include text(500, 21px);
+  letter-spacing: 0.05em;
+  margin: 16px 0;
+}
