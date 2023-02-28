@@ -4,6 +4,16 @@
   background-color: transparent;
   border-radius: 40px;
   padding: 12px 27px;
+
+  &_special {
+    @include link;
+    display: block;
+    width: max-content;
+    border-color: $white;
+    color: $white;
+    padding: 11px 45px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .button-basic_header {
