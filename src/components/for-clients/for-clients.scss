@@ -1,0 +1,56 @@
+.for-clients {
+  background-color: $basic-gray;
+}
+
+.for-clients__wrapper {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 50px 80px 131px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.for-clients__item {
+  background-color: $basic-accent;
+  width: 30%;
+  flex-grow: 1;
+  color: $white;
+  padding: 35px 40px;
+  position: relative;
+}
+
+.for-clients__heading {
+  font-size: 18px;
+  margin: 0;
+}
+
+.for-clients__text {
+  max-width: 231px;
+  font-size: 14px;
+  margin-top: 21px;
+  margin-bottom: 26px;
+  line-height: 140%;
+}
+
+.for-clients__input {
+  border: none;
+  border-radius: 30px;
+  padding: 9px 25px;
+  width: 100%;
+  max-width: 174px;
+
+  &::placeholder {
+    color: $basic-neutral;
+    font-size: 14px;
+    font-family: $font-basic;
+  }
+}
+
+.for-clients__icon {
+  position: absolute;
+  top: 50%;
+  right: 45px;
+  transform: translateY(-50%);
+}
