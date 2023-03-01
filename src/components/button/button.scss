@@ -5,6 +5,7 @@
   background-color: transparent;
   border-radius: 40px;
   padding: 10px 25px;
+  cursor: pointer;
 
   &_special {
     @include link;
@@ -14,6 +15,11 @@
     color: $white;
     padding: 11px 45px;
     letter-spacing: 0.05em;
+
+    &:hover {
+      background-color: $white;
+      color: $basic-accent;
+    }
   }
 
   &_main {
@@ -23,14 +29,32 @@
     border-radius: 30px;
     padding: 9px 40px;
     border: none;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $basic-accent;
+      padding: 7px 38px;
+      color: $black;
+    }
   }
-}
 
-.button-basic_header {
-  margin-left: 38px;
-}
+  &_header {
+    margin-left: 38px;
 
-.button-basic_for-clients {
-  padding: 8px 27px;
-  letter-spacing: normal;
+    &:hover {
+      background-color: $basic-accent;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $basic-accent;
+      color: $white;
+      opacity: 70%;
+    }
+  }
+
+  &_for-clients {
+    padding: 8px 27px;
+    letter-spacing: normal;
+  }
 }

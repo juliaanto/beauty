@@ -28,6 +28,14 @@
   & svg {
     justify-self: center;
   }
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
 }
 
 .address {
@@ -49,4 +57,8 @@
   @include link;
   @include text(400, 12px);
   color: $special-gray;
+
+  &:hover {
+    color: $basic-accent;
+  }
 }

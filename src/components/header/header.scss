@@ -27,6 +27,14 @@
 .nav__link {
   @include link;
   @include text(400, 14px);
+
+  &:hover {
+    color: $basic-accent;
+  }
+
+  &:active {
+    color: $special-gray;
+  }
 }
 
 .second-line {
@@ -64,6 +72,14 @@
 
 .phone-number {
   @include link;
+
+  &:hover {
+    color: $basic-accent;
+  }
+
+  &:active {
+    color: $special-gray;
+  }
 }
 
 .menu {
@@ -77,4 +93,12 @@
 
 .menu__link {
   @include link;
+
+  &:hover {
+    color: $basic-accent;
+  }
+
+  &:active {
+    color: $special-gray;
+  }
 }
