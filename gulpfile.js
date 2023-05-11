@@ -5,6 +5,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const gcssmq = require('gulp-group-css-media-queries');
 const includeFiles = require('gulp-include');
 const browserSync = require('browser-sync').create();
+const gulp = require("gulp");
+const ghpages = require('gh-pages');
 
 function browsersync() {
   browserSync.init({
@@ -96,3 +98,7 @@ exports.build = series(
   copyResources,
   pages
 )
+
+gulp.task('deploy', function() {
+  return ghpages.publish('public');
+});
